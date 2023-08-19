@@ -1,0 +1,156 @@
+/* Importa la fuente Poppins desde Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,100&display=swap');
+
+/* Configuración total de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.4px;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Estilos para el fondo del body */
+body {
+  background: linear-gradient(135deg, #218036, #266371) fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* Estilos para el container principal */
+.container {
+  background-color: #fff;
+  width: 450px;
+  padding: 50px 40px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.1);
+}
+
+.logoandtitle {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para la img (Logo) */
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para la img (Logo) */
+.logo img {
+  width: 70px;
+  height: 80px;
+  margin-right: 5px;
+}
+
+
+.header-text {
+    width: 100%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0px;
+    margin: 1px;;
+  }
+
+/* Estilos para el título*/
+.header-text h1 {
+  margin: 1px;
+  line-height: 1;
+  color: #218036;
+  margin-block-start: 10%;
+}
+
+/* Estilos para el contenedor de elementos */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+/* Estilos para las etiquetas de texto */
+.lbl {
+  font-size: 16px;
+  color: #44475b;
+  font-weight: 400;
+}
+
+/* Estilos para los valores */
+.val {
+  color: #44475b;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* Estilos para la caja de entrada de valores */
+.input-box {
+  background-image: linear-gradient(-225deg, #218036 0%, #a0e2ae 67%, #218036 100%);
+  color: #218036;
+  padding: 5px;
+  border-radius: 5%;
+}
+
+/* Estilos para el txt del monto */
+#monto {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100px;
+  text-align: right;
+  color: #266371;
+}
+
+/* Estilos para la línea divisoria */
+hr {
+  border: 50px;
+  border-bottom: 1px solid #6cb369;
+}
+
+/* Estilos para los rangos de entrada */
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Espaciado entre los rangos de entrada */
+input[type="range"]:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+/* Espaciado para las secciones */
+section:not(:first-child) {
+  margin-bottom: 15px;
+}
+
+/* Estilos para la sección final */
+section:last-child {
+  background-color: #a0e2ae;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Estilos para valores y etiquetas en la sección final */
+section:last-child .val,
+section:last-child .lbl {
+  color: #218036;
+}
+
+.btn{
+    color: #193d16;
+    font-weight: 1000;
+    border-radius: 40px;
+    background-color: #a0e2ae;
+    padding: 5px;
+    background-image: linear-gradient(-225deg, #218036 0%, #a0e2ae 67%, #218036 100%);
+    box-shadow: 0 0 0 0 #218036, 0 0 0 0 #266371;
+}

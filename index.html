@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configuración del encabezado del documento -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlace a la hoja de estilos del swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Enlace a img del logo-->
+    <link rel="icon" href="https://img2.freepng.es/20180625/sfu/kisspng-grupo-nutresa-medelln-grupo-sura-logo-coffee-slogan-5b31254f3efc67.192478901529947471258.jpg" type="image/jpg">
+    <!-- Enlace a biblioteca numeral.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <!-- Título de la página -->
+    <title>Calculadora De Propinas</title>
+    
+</head>
+
+<body>
+    <!-- Estructura principal de la página -->
+    <header class="header">
+        <!-- Contenido principal -->
+        <div class="container">
+            <div class="logoandtitle">
+            <div class="logo ">
+                <a href="#" class="logo"><img src="/imagenes/logo.png" alt="logo"></a>
+            </div>
+            <div class="header-text">
+                <h1>Calculadora de Propinas</h1>
+            </div>
+        </div>
+            
+            <!-- Primera sección de la calculadora -->
+            <section >
+                <div class="wrapper">
+                    <!-- Etiqueta y caja de entrada para el monto -->
+                    <label for="monto" class="lbl">
+                        Monto
+                    </label>
+                    <div class="input-box">
+                        <span> 
+                            <i class="fa-sharp fa-solid fa-square-dollar"></i>
+                        </span>
+                        <input type="number" id="monto" class="val" min="0" step="0.01">
+                    </div>
+                </div>
+                <!-- Etiqueta y valor para la propina -->
+                <div class="wrapper">
+                    <span class="lbl">Propina</span>
+                    <span id="valor-propina" class="val">
+                    </span>
+                </div>
+                <hr>
+                <!-- Etiqueta y valor para el total a pagar -->
+                <div class="wrapper">
+                    <span class="lbl">Total a pagar (incluyendo propina):</span>
+                    <span id="total-pago" class="val">
+                    </span>
+                </div>
+            </section>
+
+            <!-- Segunda sección de la calculadora -->
+            <section >
+                <div class="wrapper">
+                    <!-- Etiqueta y valor para el porcentaje de propina -->
+                    <label for="propina" class="lbl">
+                        Porcentaje Propina
+                    </label>
+                    <span id="propina-porcentaje" class="val">
+                    </span>
+                </div>
+                <!-- Rango de entrada para el porcentaje de propina -->
+                <input type="range" min="5" max="50" id="propina" value="5">
+                <div class="wrapper">
+                    <!-- Etiqueta y valor para el número de personas -->
+                    <label for="no-de-personas" class="lbl">
+                        Nro De personas
+                    </label>
+                    <span id="num-personas" class="val">
+                    </span>
+                </div>
+                <!-- Rango de entrada para el número de personas -->
+                <input type="range" min="1" max="15" id="no-de-personas" value="1">
+            </section>
+
+            <!-- Tercera sección de la calculadora -->
+            <section>
+                <div class="wrapper">
+                    <!-- Etiqueta y valor para la propina por persona -->
+                    <span class="lbl">
+                        Propina por persona
+                    </span>
+                    <span id="propina-por-persona" class="val">
+                    </span>
+                </div>
+            </section>
+            <!-- Boton para reestablecer los valores -->
+            <button id="reset-button" class="btn">Restablecer Valores</button>
+        </div>
+    </header>
+
+    <!-- Enlace al script del swiper y al script personalizado -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
